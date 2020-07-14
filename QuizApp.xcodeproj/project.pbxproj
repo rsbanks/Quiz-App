@@ -13,6 +13,10 @@
 		3B4BE825248B05FC00D1CBE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B4BE823248B05FC00D1CBE1 /* Main.storyboard */; };
 		3B4BE827248B05FD00D1CBE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B4BE826248B05FD00D1CBE1 /* Assets.xcassets */; };
 		3B4BE82A248B05FD00D1CBE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B4BE828248B05FD00D1CBE1 /* LaunchScreen.storyboard */; };
+		3B4BE832248B061200D1CBE1 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4BE831248B061200D1CBE1 /* Question.swift */; };
+		3B4BE835248B069900D1CBE1 /* QuizModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4BE834248B069900D1CBE1 /* QuizModel.swift */; };
+		3B4BE83D248BBA0000D1CBE1 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4BE83C248BBA0000D1CBE1 /* ResultViewController.swift */; };
+		3B4BE83F248C016200D1CBE1 /* StateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4BE83E248C016200D1CBE1 /* StateManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		3B4BE826248B05FD00D1CBE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B4BE829248B05FD00D1CBE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B4BE82B248B05FD00D1CBE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B4BE831248B061200D1CBE1 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		3B4BE834248B069900D1CBE1 /* QuizModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizModel.swift; sourceTree = "<group>"; };
+		3B4BE83C248BBA0000D1CBE1 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		3B4BE83E248C016200D1CBE1 /* StateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +67,10 @@
 				3B4BE81D248B05FC00D1CBE1 /* AppDelegate.swift */,
 				3B4BE81F248B05FC00D1CBE1 /* SceneDelegate.swift */,
 				3B4BE821248B05FC00D1CBE1 /* ViewController.swift */,
+				3B4BE83C248BBA0000D1CBE1 /* ResultViewController.swift */,
+				3B4BE83E248C016200D1CBE1 /* StateManager.swift */,
+				3B4BE831248B061200D1CBE1 /* Question.swift */,
+				3B4BE834248B069900D1CBE1 /* QuizModel.swift */,
 				3B4BE823248B05FC00D1CBE1 /* Main.storyboard */,
 				3B4BE826248B05FD00D1CBE1 /* Assets.xcassets */,
 				3B4BE828248B05FD00D1CBE1 /* LaunchScreen.storyboard */,
@@ -139,8 +151,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B4BE822248B05FC00D1CBE1 /* ViewController.swift in Sources */,
+				3B4BE832248B061200D1CBE1 /* Question.swift in Sources */,
 				3B4BE81E248B05FC00D1CBE1 /* AppDelegate.swift in Sources */,
+				3B4BE83F248C016200D1CBE1 /* StateManager.swift in Sources */,
 				3B4BE820248B05FC00D1CBE1 /* SceneDelegate.swift in Sources */,
+				3B4BE835248B069900D1CBE1 /* QuizModel.swift in Sources */,
+				3B4BE83D248BBA0000D1CBE1 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +301,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7DK2LDH6KJ;
 				INFOPLIST_FILE = QuizApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +320,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7DK2LDH6KJ;
 				INFOPLIST_FILE = QuizApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
